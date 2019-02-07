@@ -10,8 +10,8 @@ If you encounter "Failed to execute script" when packing the app with pyinstalle
 <br>
 
 - WebBrowserInterop.x64.dll
-<br>
 - WebBrowserInterop.x86.dll
+
 <br>
 From:PythonXX\Lib\site-packages\webview\lib
 <br>
