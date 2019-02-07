@@ -30,3 +30,4 @@ To Python root:
 pyinstaller app.spec
 ```
 
+Make sure you update the .spec file for your needs. The .spec file collects automatically the static files for Flask
