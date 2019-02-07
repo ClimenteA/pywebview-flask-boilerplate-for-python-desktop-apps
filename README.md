@@ -9,7 +9,9 @@ Desktop apps with looks like webapps with the help of pywebview (facilitates usi
 
 ### If you encounter "Failed to execute script" when packing the app with pyinstaller try to:
 <br>
+
 Copy this 2 files:
+
 * WebBrowserInterop.x64.dll
 * WebBrowserInterop.x86.dll
 
