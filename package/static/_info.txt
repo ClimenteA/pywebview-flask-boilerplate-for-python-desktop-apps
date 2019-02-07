@@ -1,0 +1,4 @@
+In the static folder put the .css and .js files
+
+You can use a differenc css framework if you like 
+This one is Materializecss v1.0.0Beta

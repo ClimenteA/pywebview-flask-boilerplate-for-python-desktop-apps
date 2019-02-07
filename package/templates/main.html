@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+
+
+<h2>Pywebview + Flask + Pyinstaller ==> Desktop app</h2>
+
+
+<p>Desktop apps with looks like webapps with the help of pywebview (facilitates using HTML/CSS/JS in the interface), Flask (to build the routes to the logic) and Pyinstaller (to build it as a standalone desktop app)</p>
+
+
+<h4>If you encounter "Failed to execute script" when packing the app with pyinstaller try to:</h4>
+
+<span>Copy this 2 files:</span>
+<ul>
+    <li>WebBrowserInterop.x64.dll</li>
+    <li>WebBrowserInterop.x86.dll</li>
+</ul>
+
+<span>From: PythonXX\Lib\site-packages\webview\lib</span>
+
+<span>To Python root: C:\PythonXX</span>
+
+<h4>Make the destop app from the .spec file</h4>
+
+<span>pyinstaller app.spec</span>
+
+
+
+<h4>Some routes examples</h4>
+
+<a href="/success" class="btn-large">Success route</a>
+<a href="/failed" class="btn-large red">Failed route</a>
+
+
+<div style="margin-bottom: 9rem;"></div>
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <style media="screen">
+
+    .loader {
+      position: fixed;
+      z-index: -1;
+      top:0;
+      left:0;
+      height:100%;
+      width:100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader > img {
+      width: 5%;
+    }
+
+    .loader.hidden {
+      animation: fadeOut 0.2s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    </style>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='materialize/css/materialize.min.css')}}" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='custom.css')}}">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FollowUP</title>
+  </head>
+  <body>
+
+    <div class="loader hidden">
+        <img src="/static/loader.gif" alt="Please wait...">
+    </div>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    //for preloader
+    window.addEventListener("load", function() {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+    })
+  </script>
+
+ <script type="text/javascript" src="{{ url_for('static', filename='materialize/js/materialize.min.js')}}"></script>
+ <script type="text/javascript" src="{{ url_for('static', filename='custom.js')}}"></script>
+</html>
