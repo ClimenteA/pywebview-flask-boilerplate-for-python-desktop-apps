@@ -7,7 +7,7 @@ Desktop apps with looks like webapps with the help of pywebview (facilitates usi
 - pyinstaller == 3.4
 
 
-## If you encounter "Failed to execute script" when packing the app with pyinstaller try to:
+### If you encounter "Failed to execute script" when packing the app with pyinstaller try to:
 <br>
 Copy this 2 files:
 <br>
@@ -24,7 +24,7 @@ To Python root:
 - C:\\PythonXX
 
 
-## Make the destop app from the .spec file
+### Make the destop app from the .spec file
 ```
 pyinstaller app.spec
 ```
