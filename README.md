@@ -13,6 +13,10 @@ Copy this 2 files:
 - WebBrowserInterop.x86.dll
 
 <br>
-From: PythonXX\Lib\site-packages\webview\lib
+From: 
+- PythonXX\Lib\site-packages\webview\lib
+
 <br>
-To Python root: C:\\PythonXX
+
+To Python root: 
+- C:\\PythonXX
